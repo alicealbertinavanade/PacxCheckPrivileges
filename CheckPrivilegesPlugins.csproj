@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>Get entity privileges for PACX</Title>
+    <Authors>alicealbertinavanade</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Greg.Xrm.Command.Interfaces" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.58.0" /> <!-- warning di sicurezza, ultima disponibile -->
+    <PackageReference Include="System.Formats.Asn1" Version="8.0.1" /> <!-- aggiorna -->
+    <PackageReference Include="System.Text.Json" Version="8.0.1" /> <!-- warning di sicurezza, ultima disponibile -->
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" /> <!-- usa versione disponibile -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
